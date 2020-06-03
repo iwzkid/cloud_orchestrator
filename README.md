@@ -16,10 +16,10 @@ The recommended way to install Cloud Orchestrator is using Composer.
 composer create-project docomoinnovations/cloud_orchestrator cloud_orchestrator
 ```
 
-To try out 8.x-2.0-rc1 use the following command.
+To try out 8.x-2.0-rc2 use the following command.
 
 ```
-composer create-project docomoinnovations/cloud_orchestrator:8.2.0-rc1 cloud_orchestrator
+composer create-project docomoinnovations/cloud_orchestrator:8.2.0-rc2 cloud_orchestrator
 ```
 
 After the composer project is created, point your web server to `cloud_orchestrator/docroot`.  Then
@@ -45,14 +45,4 @@ Issues are tracked on [drupal.org][issue_queue].  Please do not submit support r
 [cloud_module]: https://www.drupal.org/project/cloud "Cloud module"
 
 ## Known Issues
-1. 01-31-2020 - [Issue 3110911](https://www.drupal.org/project/cloud/issues/3110911)
-   Do not enable aws_cloud if a `Add Kubernetes Cloud Service Provider`
-   is not completed.
-
-   When adding a Metrics Server enabled Kubernetes cluster, the metrics
-   importing operation can potentially take a long time to complete.
-   During this process,  there might be database corruption if the aws_cloud
-   module is enabled.
-
-   As a workaround, enable aws_cloud when the server is idle and not processing
-   a `Add Kubernetes Cloud Service Provider` operation.
+No known issues
