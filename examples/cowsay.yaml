@@ -1,9 +1,9 @@
 apiVersion: v1
-kind: Pod
+kind: {{ kind }}
 metadata:
   name: cowsay-pod
 spec:
   containers:
-  - name: cowsay
-    image: docomoinnovations/cloud_orchestrator:cowsay
+  - name: {{ name }}
+    image: docomoinnovations/cloud_orchestrator:{{ name }}
   restartPolicy: Never
